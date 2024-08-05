@@ -185,13 +185,16 @@
         //2. n을 생성자로 포함하는 Solution10 함수 정의
         public int Solution10(int n)
         {
+            //3. 1부터 n 사이의 숫자에 대한 조건을 반복하는 반복문
             for (int i = 1; i <= n; i++)
             {
+                //4. i를 2로 나눈 나머지가 0일 때(i가 2의 배수일 때) 조건에 맞는 모든 i 값의 합을 answer에 대입
                 if (i % 2 == 0)
                 {
                     answer += i;
                 }
             }
+            //5. 결과값 도출
             return answer;
         }
 
