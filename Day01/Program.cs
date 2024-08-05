@@ -8,7 +8,7 @@
         // *-50000 <= num2 <=50000
         // [입출력 예시: 2,3=5 / 100,2=102]
 
-        //1. 정수 num1과 num2를 생성자로 포함하는 Solution1 함수 생성
+        //1. 정수 num1과 num2를 생성자로 포함하는 Solution1 함수 정의
         public int Solution1(int num1, int num2)                   
         {
             //2. num1과 num2를 더하기 연산 실행
@@ -24,7 +24,7 @@
         // *-50000 <= num2 <=50000
         // [입출력 예시: 2,3=-1 / 100,2=98]
 
-        //1. 정수 num1과 num2를 생성자로 포함하는 Solution2 함수 생성
+        //1. 정수 num1과 num2를 생성자로 포함하는 Solution2 함수 정의
         public int Solution2(int num1, int num2)                 
         {
             //2. num1과 num2를 마이너스 연산 실행
@@ -40,7 +40,7 @@
         // *0 <= num2 <= 100
         // [입출력 예시: 3,4=12 / 27,19=513]
 
-        //1. 정수 num1과 num2를 생성자로 포함하는 Solution3 함수 생성
+        //1. 정수 num1과 num2를 생성자로 포함하는 Solution3 함수 정의
         public int Solution3(int num1, int num2)                   
         {
             //2. num1과 num2를 곱연산 실행
@@ -56,7 +56,7 @@
         // *0 <= num2 <= 100
         // [입출력 예시: 10,5=2 / 7,2=3]
 
-        //1. 정수 num1과 num2를 생성자로 포함하는 Solution4 함수 생성
+        //1. 정수 num1과 num2를 생성자로 포함하는 Solution4 함수 정의
         public int Solution4(int num1, int num2)                 
         {
             //2. num1과 num2를 나누기 연산 실행
@@ -72,7 +72,7 @@
         // *0 <= num2 <= 10000
         // [입출력 예시: 2,3 = -1 / 11,11=1 / 7,99=-1]
 
-        //1. 정수 num1과 num2를 생성자로 포함하는 Solution5 함수 생성
+        //1. 정수 num1과 num2를 생성자로 포함하는 Solution5 함수 정의
         public int Solution5(int num1, int num2)       
         {
             //2. 결과값을 받을 answer을 int로 변수 선언
@@ -98,7 +98,7 @@
         // *0 <= num2 <= 100
         // [입출력 예시: 3,2=1500 / 7,3=2333 / 1,16=62]
 
-        //1. 정수 num1과 num2를 생성자로 포함하는 Solution6 함수 생성
+        //1. 정수 num1과 num2를 생성자로 포함하는 Solution6 함수 정의
         public int Solution6(int num1, int num2)
         {
             //2. num1과 num2를 float로 형변환 후 나누기 연산으로 result 값 구하기
@@ -118,7 +118,7 @@
         // *0 <= num2 <= 100
         // [입출력 예시: 3,2=1 / 10,5=0]
 
-        //1. 정수 num1과 num2를 생성자로 포함하는 Solution7 함수 생성
+        //1. 정수 num1과 num2를 생성자로 포함하는 Solution7 함수 정의
         public int Solution7(int num1, int num2)
         {
             //2. num1과 num2의 나머지 구하기 연산으로 answer 값 구하기
@@ -135,7 +135,7 @@
         // *나이는 태어난 연도에 1살이며, 매년 1월 1일마다 1살씩 증가합니다.
         // [입출력 예시: 40=1983 / 23=2000]
 
-        //1. age와 answer을 생성자로 포함한 Solution8 함수 생성
+        //1. age와 answer을 생성자로 포함한 Solution8 함수 정의
         public int Solution8(int age, int answer)       
         {
             //2. 0 < age <= 120일 때, 2022년에서 나잇값(나이-1)을 빼는 연산 수행
@@ -158,7 +158,7 @@
         //1. 배열 내 모든 정수를 합한 값에 대한 변수 선언 및 초기화
         public int sum = 0;
 
-        //2. 배열을 생성자로 포함한 Solution9 함수 생성
+        //2. 배열을 생성자로 포함한 Solution9 함수 정의
         public double Solution9(int[] numbers)      
         {
             //3. 배열 내 값을 모두 더하여 sum에 대입하는 조건문
@@ -172,6 +172,30 @@
             //5. 결과값 도출
             return answer;      
         }
+
+
+        // 문제 10: 정수 n이 주어질 때, n이하의 짝수를 모두 더한 값을 return 하도록 solution 함수를 작성해주세요.
+        // <제한사항>
+        // *0 < n ≤ 1000
+        // [입출력 예시: n=10, result=30 / n=4, result=6]
+
+        //1. n 이하의 짝수를 모두 더한 값을 저장하기 위한 변수 answer 선언 및 초기화
+        int answer = 0;
+
+        //2. n을 생성자로 포함하는 Solution10 함수 정의
+        public int Solution10(int n)
+        {
+            for (int i = 1; i <= n; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    answer += i;
+                }
+            }
+            return answer;
+        }
+
+
 
         static void Main()
         {
